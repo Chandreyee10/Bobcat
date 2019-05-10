@@ -30,7 +30,8 @@ public class LoginTest {
 
   @Test
   public void loginSearchTest() {
-   System.setProperty("webdriver.chrome.driver", '/usr/bin/chromedriver.exe');
+   System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver.exe");
+	  options.setBinary("/usr/bin/chromedriver.exe");
 	  ChromeOptions options = new ChromeOptions();
 	  options.addArguments("--no-sandbox"); // Bypass OS security model
 	  options.addArguments("start-maximized"); // open Browser in maximized mode
