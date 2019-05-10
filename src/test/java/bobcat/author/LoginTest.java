@@ -32,12 +32,13 @@ public class LoginTest {
   public void loginSearchTest() {
    System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver.exe");
 	  ChromeOptions options = new ChromeOptions();
+	  options.addArguments("--no-sandbox"); // Bypass OS security model
 	  options.addArguments("start-maximized"); // open Browser in maximized mode
 	  options.addArguments("disable-infobars"); // disabling infobars
 	  options.addArguments("--disable-extensions"); // disabling extensions
 	  options.addArguments("--disable-gpu"); // applicable to windows os only
 	  options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-	  options.addArguments("--no-sandbox"); // Bypass OS security model
+	
 	  WebDriver driver = new ChromeDriver(options);
 	  driver.get("https://google.com");
     AuthorLoginPage authorPage = bobcatPageFactory.create("http://localhost:4502/libs/granite/core/content/login.html?resource=%2F&$$login$$=%24%24login%24%24&j_reason=unknown&j_reason_code=unknown", AuthorLoginPage.class);
