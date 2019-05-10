@@ -30,7 +30,7 @@ public class LoginTest {
 
   @Test
   public void loginSearchTest() {
-   System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver.exe");
+   System.setProperty("webdriver.chrome.driver", "/usr/bin/chrome.exe");
 	  
 	  ChromeOptions options = new ChromeOptions();
 	  options.setBinary("/usr/bin/chromedriver.exe");
