@@ -31,6 +31,12 @@ public class LoginTest {
   @Test
   public void loginSearchTest() {
 
+    System.setProperty("webdriver.chrome.driver","pathto\\chromedriver.exe");    
+	 ChromeOptions options = new ChromeOptions();
+	 options.setExperimentalOption("useAutomationExtension", false);
+	 WebDriver driver = new ChromeDriver(options);
+	 driver.get("https://google.com");
+	
     AuthorLoginPage authorPage = bobcatPageFactory.create("http://localhost:4502/libs/granite/core/content/login.html?resource=%2F&$$login$$=%24%24login%24%24&j_reason=unknown&j_reason_code=unknown", AuthorLoginPage.class);
     authorPage.open().login("admin","admin");
     
