@@ -33,7 +33,7 @@ public class LoginTest {
    System.setProperty("webdriver.chrome.driver", "/usr/bin/chrome.exe");
 	  
 	  ChromeOptions options = new ChromeOptions();
-	  options.setBinary("/usr/bin/chromedriver.exe");
+	  options.setBinary("/usr/bin/chrome.exe");
 	  options.addArguments("--no-sandbox"); // Bypass OS security model
 	  options.addArguments("start-maximized"); // open Browser in maximized mode
 	  options.addArguments("disable-infobars"); // disabling infobars
