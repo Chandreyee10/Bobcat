@@ -5,6 +5,8 @@ default:
     proxy.port: 9000
     page.title.timeout: 300000
     thread.count: 3
+    webdriver.chrome.headless: true
+    webdriver.chrome.headless.disableGpu: false
     allure.report: true
     allure.create.enviroment: true   
     timings.implicitTimeout: 500000
