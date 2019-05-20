@@ -3,13 +3,8 @@ default:
     webdriver.defaultTimeout: 10
     page.title.timeout: 30
     thread.count: 3
-    webdriver.type: remote
-    webdriver.url: http://52.212.0.112:4444/wd/hub
     webdriver.cap.recordVideo: false
     webdriver.cap.maxInstances: 1
-    webdriver.cap.platform: LINUX
-    webdriver.chrome.headless: true
-    webdriver.chrome.headless.disableGpu: false
     allure.report: true
     allure.create.enviroment: true   
     timings.implicitTimeout: 500000
